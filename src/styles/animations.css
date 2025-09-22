@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.pulse-hover:hover {
+  animation: pulse 0.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+.navbar-brand {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.search-container {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+  transform: scale(1.02);
+}
+
+.category-card {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.auth-button {
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
